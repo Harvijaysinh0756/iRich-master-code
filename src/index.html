@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IRich</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/jquery.slim.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+ 
+</head>
+<body>
+  <app-root></app-root>
+<!-- Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="videoModalLabel">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <video src="assets/images/product.mp4" id="irch_video" poster="assets/images/video-poster.png" controls></video>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- video tagg -->
+ <script>
+     // Get the video
+     var video = document.getElementById("irch_video");
+
+     // Get the button
+     var btn = document.getElementById("myBtn");
+
+     // Pause and play the video, and change the button text
+     function myFunction() {
+         if (video.paused) {
+             video.play();
+             btn.innerHTML = "Pause";
+         } else {
+             video.pause();
+             btn.innerHTML = "Play";
+         }
+     }
+ </script>
+ <!-- video tagg end-->
+
+
+ <!-- toggler icon -->
+ <script>
+     $(document).ready(function() {
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function() {
+            debugger;
+            $(this).toggleClass('open');
+        });
+     });
+ </script>
+    
+</body>
+</html>

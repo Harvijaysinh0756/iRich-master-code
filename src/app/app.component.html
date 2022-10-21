@@ -1,0 +1,13 @@
+<main class="ir-site">
+    <!-- main page wrapper start -->
+    <app-header [siteSetting]="siteSetting" class="ir-header"></app-header>
+    <div class="page-wrap">
+        <ngx-ui-loader></ngx-ui-loader>
+        <router-outlet [document]="document"></router-outlet>
+    </div>
+    <app-footer [siteSetting]="siteSetting" [document]="document"></app-footer>
+    <!-- page wrapper end -->
+</main>
+
+
+
